@@ -8,3 +8,10 @@ This will not be anything close to something like vllm or llama.cpp, but is more
 
 For this project I will be attempting to get inference working on the [TinyLlama 1.1b model](https://github.com/jzhang38/tinyllama)
 No quanitization (yet), for now focusing on FP16 suporting the SafeTensors format
+
+
+## Safetensor format spec
+
+![alt text](image.png)
+
+Source: https://huggingface.co/docs/safetensors/en/index

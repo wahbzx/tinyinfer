@@ -13,3 +13,7 @@ add_executable(tinyinfer
 )
 
 target_link_libraries(tinyinfer PRIVATE CUDA::cudart CUDA::cublas)
+
+target_compile_definitions(tinyinfer PRIVATE
+    TINYINFER_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}"
+)
