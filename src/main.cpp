@@ -8,6 +8,7 @@
 #include <string>
 #include <nlohmann/json.hpp>
 #include <sentencepiece_processor.h>
+#include "tensor.hpp"
 
 nlohmann::json read_safetensors_header(std::ifstream& file) {
     // Get the first 8 bytes and parse as a uint64_t - the size of the JSON header
@@ -112,5 +113,6 @@ int main() {
     }
 
     std::cout << "Tensor data starts at byte: " << tensor_data_start << '\n';
+
     return tokeniser_experiment();
 }
