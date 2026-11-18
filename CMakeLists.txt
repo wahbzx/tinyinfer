@@ -41,6 +41,7 @@ FetchContent_MakeAvailable(sentencepiece)
 # Executable
 add_executable(tinyinfer
     src/main.cpp
+    src/model.cpp
     src/kernels/hello.cu
 )
 
